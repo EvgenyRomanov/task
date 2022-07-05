@@ -5,15 +5,15 @@ namespace classes;
 
 class DogArray
 {
-	private $groups = [];
-	private $dogs = [];
+    private $groups = [];
+    private $dogs = [];
 
     private function newDog($name, $age, $owner, $group)
-	{
-		$this->dogs[] = new Dog($name, $age, $owner, $group);
-	}
+    {
+        $this->dogs[] = new Dog($name, $age, $owner, $group);
+    }
 	
-	private function getGroup(string $breed, string $image, string $color) 
+    private function getGroup(string $breed, string $image, string $color) 
     {
         $key = 'key_' . $breed . $image . $color;
 		
