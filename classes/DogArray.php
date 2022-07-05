@@ -39,7 +39,7 @@ class DogArray
     public function findDog(array $query)
     {
         // the query to find one dog
-        // Предположим, что запрос будет поступать в виде ассоциативного массива вида ["name" => "бобик"] или ["name" => "бобик", "age" => 5]
+        // Предположим, что запрос будет поступать в виде ассоциативного массива ["name" => "бобик"] или ["name" => "бобик", "age" => 5]
 
         $neededDog = array_filter(
             $this->dogs,
